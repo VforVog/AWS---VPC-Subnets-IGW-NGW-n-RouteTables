@@ -26,7 +26,7 @@ The public EC2 (bastion host) acts as a secure entry point, while the private EC
 | **Internet Gateway** | Enables internet access for resources in the public subnet.            |
 | **NAT Gateway**    | Allows private subnet instances to initiate outbound internet traffic securely. |
 | **Route Tables**   | Control traffic flow: Public → IGW, Private → NAT Gateway.               |
-| **Key Pairs **   | Public and Private key files(.pem) for SSH Access                 |
+| **Key Pairs**   | Public and Private key files(.pem) for SSH Access                 |
 | 💻 **Compute**    |
 | **EC2 Instances**  | Public EC2 (bastion host with SSH + public IP) and Private EC2 (no public IP). |
 | 🔒 **Security**    |
