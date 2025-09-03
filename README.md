@@ -1,4 +1,4 @@
-#<br><p><b>Architecture</b></p><br>
+#<p><b>Architecture</b></p><br>
 
 ![Image Description](Picture1.jpg)
 
