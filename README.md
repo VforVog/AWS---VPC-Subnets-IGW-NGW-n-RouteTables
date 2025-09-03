@@ -6,4 +6,4 @@
 
 <br><p align="center"><b>Architecture</b></p><br>
 
-![Image Description](Picture1.jpeg)
+![Image Description](Picture1.jpg)
