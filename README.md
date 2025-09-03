@@ -25,15 +25,16 @@ The public EC2 (bastion host) acts as a secure entry point, while the private EC
 | **Subnets**        | Public (10.0.1.0/24) for bastion host, Private (10.0.2.0/24) for backend.|
 | **Internet Gateway** | Enables internet access for resources in the public subnet.            |
 | **NAT Gateway**    | Allows private subnet instances to initiate outbound internet traffic securely. |
-| **Route Tables**   | Control traffic flow: Public → IGW, Private → NAT Gateway.               |
-| **Key Pairs**   | Public and Private key files(.pem) for SSH Access                 |
+| **Elastic IP**     | Provides a stable IP for the NAT Gateway.                               |
 | 💻 **Compute**    |
 | **EC2 Instances**  | Public EC2 (bastion host with SSH + public IP) and Private EC2 (no public IP). |
 | 🔒 **Security**    |
 | **Security Groups**| Control inbound/outbound rules (SSH, ICMP for testing).                  |
-| **Elastic IP**     | Provides a stable IP for the NAT Gateway.                               |
+| **Route Tables**   | Control traffic flow: Public → IGW, Private → NAT Gateway.               |
 |⚙️ **Tools**        |
 | **AWS CLI**        | Used for configuration and SSH connectivity testing via Git Bash/VS Code. |
+| **Key Pairs**   | Public and Private key files(.pem) for SSH Access                 |
+
 
 
 
