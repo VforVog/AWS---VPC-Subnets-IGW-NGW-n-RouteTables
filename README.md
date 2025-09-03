@@ -40,6 +40,7 @@ The public EC2 (bastion host) acts as a secure entry point, while the private EC
 
 | Service            | Purpose                                                                 |
 |--------------------|-------------------------------------------------------------------------|
+| **🏗️ Infrastructure** | *Core networking resources*                                           |
 | 📦 **Amazon VPC**     | Custom virtual network (CIDR 10.0.0.0/16) to isolate resources.          |
 | **Subnets**        | Public (10.0.1.0/24) for bastion host, Private (10.0.2.0/24) for backend.|
 | **Internet Gateway** | Enables internet access for resources in the public subnet.            |
