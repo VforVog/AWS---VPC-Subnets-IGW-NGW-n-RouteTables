@@ -13,26 +13,6 @@ The public EC2 (bastion host) acts as a secure entry point, while the private EC
 
 <br>
 
-## 🛠️ Technologies Used
-
-> 📦 **Infrastructure Components**
-> - Amazon VPC (CIDR: 10.0.0.0/16)  
-> - Public Subnet (10.0.1.0/24)  
-> - Private Subnet (10.0.2.0/24)  
-> - Internet Gateway (IGW)  
-> - NAT Gateway with Elastic IP  
->
-> 💻 **Compute**
-> - EC2 Instance (Public) → Bastion Host with Public IP  
-> - EC2 Instance (Private) → Backend/Database server (no Public IP)  
->
-> 🔒 **Security**
-> - Security Groups (SSH, ICMP for testing)  
-> - Route Tables (Public → IGW, Private → NAT)  
->
-> ⚙️ **Tools**
-> - AWS CLI (via Git Bash / VS Code terminal)  
-> - Key Pairs (.pem) for SSH Access  
 
 
 
@@ -40,7 +20,7 @@ The public EC2 (bastion host) acts as a secure entry point, while the private EC
 
 | Service            | Purpose                                                                 |
 |--------------------|-------------------------------------------------------------------------|
-| 📦 ** Infrastructure**                                            |
+| 📦 **Infrastructure**                                            |
 | **Amazon VPC**     | Custom virtual network (CIDR 10.0.0.0/16) to isolate resources.          |
 | **Subnets**        | Public (10.0.1.0/24) for bastion host, Private (10.0.2.0/24) for backend.|
 | **Internet Gateway** | Enables internet access for resources in the public subnet.            |
