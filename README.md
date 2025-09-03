@@ -1,10 +1,15 @@
-# <p><b>Architecture</b></p><br>
+# <p><b>Architecture</b></p>
+
+<br>
 
 ![Image Description](Picture1.jpg)
 
 <br>
+<br>
 
-<br><p align="center"><b>Simulation</b></p><br>
+# <p align="center"><b>Simulation</b></p>
+
+<br>
 
 ![Lex Demo](gif/gif.gif)
 
