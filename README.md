@@ -36,26 +36,20 @@ The public EC2 (bastion host) acts as a secure entry point, while the private EC
 
 
 
-+-----------------------------------------------+
-| 🌐 Infrastructure Components |
-| - Amazon VPC (CIDR: 10.0.0.0/16) |
-| - Public Subnet (10.0.1.0/24) |
-| - Private Subnet (10.0.2.0/24) |
-| - Internet Gateway (IGW) |
-| - NAT Gateway with Elastic IP |
-+-----------------------------------------------+
-| 💻 Compute |
-| - EC2 Instance (Public) → Bastion Host |
-| - EC2 Instance (Private) → Backend Server |
-+-----------------------------------------------+
-| 🔒 Security |
-| - Security Groups (SSH, ICMP) |
-| - Route Tables (Public → IGW, Private → NAT) |
-+-----------------------------------------------+
-| ⚙️ Tools |
-| - AWS CLI (Git Bash / VS Code) |
-| - Key Pairs (.pem) for SSH |
-+-----------------------------------------------+
+## 🛠️ Technologies Used
+
+| Service            | Purpose                                                                 |
+|--------------------|-------------------------------------------------------------------------|
+| **Amazon VPC**     | Custom virtual network (CIDR 10.0.0.0/16) to isolate resources.          |
+| **Subnets**        | Public (10.0.1.0/24) for bastion host, Private (10.0.2.0/24) for backend.|
+| **Internet Gateway** | Enables internet access for resources in the public subnet.            |
+| **NAT Gateway**    | Allows private subnet instances to initiate outbound internet traffic securely. |
+| **Route Tables**   | Control traffic flow: Public → IGW, Private → NAT Gateway.               |
+| **EC2 Instances**  | Public EC2 (bastion host with SSH + public IP) and Private EC2 (no public IP). |
+| **Security Groups**| Control inbound/outbound rules (SSH, ICMP for testing).                  |
+| **Elastic IP**     | Provides a stable IP for the NAT Gateway.                               |
+| **AWS CLI**        | Used for configuration and SSH connectivity testing via Git Bash/VS Code. |
+
 
 
 # <p><b>Architecture</b></p>
